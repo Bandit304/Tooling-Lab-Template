@@ -14,7 +14,8 @@ describe(`folder structure`, function () {
       `tests`,
       `.gitignore`,
       `babel.config.js`,
-      `.eslintrc.json`,
+      // `.eslintrc.json`, // Outdated
+      `eslint.config.mjs`,
       `.gitignore`,
       `.prettierrc`,
       `jest.config.js`,
