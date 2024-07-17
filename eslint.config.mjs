@@ -2,7 +2,7 @@ import globals from "globals";
 import pluginJs from "@eslint/js";
 
 export default [
-	{ ignores: [ "*.config.js" ] },
+	{ ignores: [ "*.config.js", "cypress/**" ] },
 	{ languageOptions: { globals: globals.browser } },
 	pluginJs.configs.recommended,
 	{
