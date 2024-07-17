@@ -34,13 +34,13 @@ export class RockPaperScissors {
    * @param {string} cpuSelection computer selection. Can only be one of the following values [`rock`, `paper`, `scissors`]
    */
   determineWinner(userSelection, cpuSelection){
-    if (userSelection == cpuSelection) { 
+    if (userSelection === cpuSelection) { 
       return `tie`; 
     }
     else if(
-      (userSelection == `paper` && cpuSelection == `rock`) || 
-      (userSelection == `scissors` && cpuSelection == `paper`) || 
-      (userSelection == `rock` && cpuSelection == `scissors`)
+      (userSelection === `paper` && cpuSelection === `rock`) || 
+      (userSelection === `scissors` && cpuSelection === `paper`) || 
+      (userSelection === `rock` && cpuSelection === `scissors`)
     ) { 
       return `win`; 
     }
@@ -57,10 +57,10 @@ export class RockPaperScissors {
     const cpuSelection = this.generateCPUResponse(); 
     const results = this.determineWinner(userSelection, cpuSelection); 
     
-    if(results == `win`) { 
+    if(results === `win`) { 
       this.score.user++; 
     }
-    if(results == `lose`) { 
+    if(results === `lose`) { 
       this.score.cpu++; 
     }
 

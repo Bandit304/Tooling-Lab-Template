@@ -47,7 +47,7 @@ startGameButton.addEventListener(`click`, function (e) {
 // go-button EventListener
 goButton.addEventListener(`click`, function (e) {
   e.preventDefault(); 
-  const selectedOption = userSelection.options[userSelection.selectedIndex].value;
+  // const selectedOption = userSelection.options[userSelection.selectedIndex].value;
   game.play(userSelection.value); 
   updateScoreTallyUI(); 
   updateGameHistoryUI();
